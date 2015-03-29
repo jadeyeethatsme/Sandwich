@@ -1,0 +1,67 @@
+<html>
+<head>
+	<style>
+		body {
+			text-align: center;
+			background: rgb(160,0,0);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			color: white;
+			font-family: Helvetica;
+		}
+
+		p {
+			font-size: 24px;
+		}
+
+		input[type="submit"] {
+			background: white;
+			color black;
+			border: 0;
+			padding: 10px;
+			font-size: 12px;
+		}
+
+
+	</style>
+	</head>
+	
+	<body>
+
+<img src="https://c2.staticflickr.com/4/3374/3601242894_99f1806c9c.jpg">
+
+<br/>
+
+<p>Order your sandwich now!</p>
+
+<form method="POST" action=/confirm>
+	
+	Want a snack?
+	{{ form.snack }}
+
+	I only want a snack!
+	<input type="submit">
+
+<br/>
+<br/>
+	
+	Pick your bread.
+	{{ form.bread }}
+
+<br/>
+<br/>
+	 
+	Pick your filling.
+	{{ form.filling }}
+
+	{{ form.BaseForm }}
+
+	<input type="int" placeholder="Phone Number">
+	<input type="submit">
+
+</form>
+
+	</body>
+
+</html>
